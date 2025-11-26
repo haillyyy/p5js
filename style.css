@@ -79,3 +79,13 @@ header p {
     }
 }
 
+
+/* p5.js 캔버스 시각적으로 보기 좋게 */
+canvas {
+  display: block;              /* 좌우 정중앙 정렬 */
+  margin: 40px auto;           /* 위아래 여백 + 좌우 auto로 가운데 */
+  border-radius: 12px;         /* 모서리 둥글게 */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);  /* 그림자 */
+  background: #000;            /* 캔버스 뒤 배경 (없는 그림일 때 대비) */
+}
+
