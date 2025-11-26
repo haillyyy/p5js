@@ -1,0 +1,76 @@
+/* 전체 배경 & 글꼴 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #111;
+    color: #f5f5f5;
+}
+
+/* 상단 제목 영역 */
+header {
+    text-align: center;
+    padding: 40px 16px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* 링크들 감싸는 영역 */
+#projects {
+    max-width: 600px;          /* 가운데 정렬 + 폭 제한 */
+    margin: 0 auto 40px;       /* 위 0, 좌우 auto(가운데), 아래 40px */
+    padding: 0 16px;
+}
+
+/* 각 링크 카드 박스 */
+.project {
+    margin-bottom: 16px;       /* 카드 사이 간격 */
+    padding: 16px 18px;        /* 안쪽 여백 */
+    background: #1c1c1c;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+    transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+}
+
+/* 링크 텍스트 스타일 */
+.project a {
+    display: block;
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* 호버했을 때 살짝 떠 보이게 */
+.project:hover {
+    background: #242424;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.55);
+}
+
+#projects {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    padding: 0 16px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;  /* 카드 사이 간격 */
+}
+
+/* 모바일에서는 한 줄에 하나만 */
+@media (max-width: 600px) {
+    #projects {
+        grid-template-columns: 1fr;
+    }
+}
+
