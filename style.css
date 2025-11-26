@@ -57,6 +57,11 @@ header p {
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.55);
 }
 
+.project a .sub {
+    font-size: 13px;
+    color: #bbbbbb;
+}
+
 #projects {
     max-width: 800px;
     margin: 0 auto 40px;
